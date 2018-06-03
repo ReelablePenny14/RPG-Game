@@ -1,0 +1,15 @@
+---Menus---
+-obj_view (if you want the screen to move)
+-obj_control (if you want to test/use this room first)
+-obj_menu (for main menu only)
+(dont place the obj_input)
+
+---Worlds---
+-obj_view (if you want the screen to move)
+-obj_control (if you want to test/use this room first)
+-obj_player (dont place the obj_player_show)
+(dont place the obj_input)
+
+What 3raan did
+- Changed door sprite and added
+	- "image_speed = .25;"
