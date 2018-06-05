@@ -221,9 +221,23 @@
       </sprites>
       <sprites name="duck">
         <sprite>sprites\spr_duck_right</sprite>
+        <sprite>sprites\spr_duck_idle_right</sprite>
         <sprite>sprites\spr_duck_down</sprite>
+        <sprite>sprites\spr_duck_idle_down</sprite>
         <sprite>sprites\spr_duck_up</sprite>
+        <sprite>sprites\spr_duck_idle_up</sprite>
         <sprite>sprites\spr_duck_left</sprite>
+        <sprite>sprites\spr_duck_idle_left</sprite>
+      </sprites>
+      <sprites name="bull">
+        <sprite>sprites\spr_bull_down</sprite>
+        <sprite>sprites\spr_bull_idle_down</sprite>
+        <sprite>sprites\spr_bull_left</sprite>
+        <sprite>sprites\spr_bull_idle_left</sprite>
+        <sprite>sprites\spr_bull_right</sprite>
+        <sprite>sprites\spr_bull_idle_right</sprite>
+        <sprite>sprites\spr_bull_up</sprite>
+        <sprite>sprites\spr_bull_idle_up</sprite>
       </sprites>
     </sprites>
     <sprites name="buildings">
@@ -330,6 +344,7 @@
     <object>objects\obj_gate_open</object>
     <object>objects\obj_slime</object>
     <object>objects\obj_duck</object>
+    <object>objects\obj_bull</object>
     <object>objects\obj_weapon_animation</object>
     <object>objects\obj_damage</object>
     <object>objects\obj_player_stats</object>
