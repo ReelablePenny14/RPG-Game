@@ -70,7 +70,7 @@ item[iindex].name = "Basic Sheild";
 item[iindex].sprite_index = spr_shield_ui;
 item[iindex].display_sprite = spr_shield_artifact;
 item[iindex].protection = 0.5;
-item[iindex].full_protection_chance = 0.01;
+item[iindex].full_protection_chance = 0.10;
 item[iindex].type = 1;
 iindex++;
 

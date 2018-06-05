@@ -84,7 +84,6 @@ if(place_meeting(x, y, obj_parent)){
         if (place_meeting(x,y,other.id)){
             //show_debug_message("2 "+string(id));
             if (id != other.creator) {
-                show_debug_message("3");
                 hp -= other.damage;
                 var indicator = instance_create(x, y, obj_hit_indicator);
                 indicator.damage = other.damage;
@@ -94,7 +93,22 @@ if(place_meeting(x, y, obj_parent)){
 }
 if(place_meeting(x, y, obj_player_show)){
     if (obj_player_show.id != creator) {
-        show_debug_message("4");
+    
+        //take damage off based on protection
+        var bonus_protection = 0;
+        for(var i=1;i&lt;array_length_1d(obj_player_stats.inventory);i++){
+            bonus_protection+=obj_player_stats.inventory[i].protection;
+        }
+        damage = max(damage - bonus_protection, 0)
+        
+        //take 0 damage if full protection is true
+        var full_protection_chance = 0;
+        for(var i=1;i&lt;array_length_1d(obj_player_stats.inventory);i++){
+            full_protection_chance+=obj_player_stats.inventory[i].full_protection_chance;
+        }
+        if(random(1)&lt;full_protection_chance) damage = 0;
+        
+        //damage object and show indicator
         obj_player_stats.hp -= damage;
         var indicator = instance_create(obj_player_show.x, obj_player_show.y, obj_hit_indicator);
         indicator.damage = damage;

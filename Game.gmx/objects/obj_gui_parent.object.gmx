@@ -31,7 +31,7 @@ number = -1;
 number_length = 0;
 type = "";
 mouse_over = false;
-lines = 0;
+lines = noone;
 startingx = 0;
 startingy = 0;
 sviewx = 0;
@@ -62,19 +62,25 @@ tab_num = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if((string_copy(type, 1, 8) == "gui_item" or string_copy(type, 1, 8) == "gui_weap") and string_copy(type, 10, string_length(type)) != "spr_bottom_ui"){
+            <string>if(type == "spr_bottom_ui"){
     var scale = display_get_gui_width()/view_wview[0];
-    var mouse_over = point_in_rectangle(mouse_x-view_xview[0], mouse_y-view_yview[0], startingx-sviewx, startingy-sviewy, startingx-sviewx+sprite_width/scale, startingy-sviewy+sprite_height/scale)
-    if (mouse_over) {
-        if (mouse_check_button_pressed(mb_left)) {
-            if(obj_control.game_state == PAUSE){
-                with(obj_gui_parent){
-                    lines = 0;
-                }
-                lines = scr_draw_item_stats(obj_player_stats.inventory[inventory_slot], inventory_slot);
-            }
+    var mouse_over = false;
+    for(var i=0; i&lt;5; i++){
+        mouse_over = point_in_rectangle(mouse_x-view_xview[0], mouse_y-view_yview[0], x/scale+7+i*23, y/scale+13, x/scale+7+i*23+16, y/scale+13+16);
+        if (mouse_over and mouse_check_button_pressed(mb_left) and obj_control.game_state == PAUSE) {
+            lines = 0;
+            lines = scr_draw_item_stats(obj_player_stats.inventory[i], i);
         }
     }
+    /*var mouse_over = point_in_rectangle(mouse_x-view_xview[0], mouse_y-view_yview[0], startingx-sviewx, startingy-sviewy, startingx-sviewx+sprite_width/scale, startingy-sviewy+sprite_height/scale)
+    if (mouse_over and mouse_check_button_pressed(mb_left) and obj_control.game_state == PAUSE) {
+                         
+    with(obj_gui_parent){
+        lines = 0;
+    }
+    lines = scr_draw_item_stats(obj_player_stats.inventory[inventory_slot], inventory_slot);
+
+    }*/
 }
 if(inventory_slot!=-1){
     sprite_index = obj_player_stats.inventory[inventory_slot].sprite_index;
@@ -121,25 +127,6 @@ if(tab_num != -1){
 var scale = display_get_gui_width()/view_wview[0];
 var offsety = (display_get_gui_height()-(display_get_gui_width()/2))/2 + 5;
 
-//draw gui
-if(string_copy(type, 1, 8) == "gui_item" or string_copy(type, 1, 8) == "gui_weap"){
-    //x = startingx*scale;
-    //y = startingy*scale;
-    x = (startingx-sviewx)*scale;
-    y = (startingy-sviewy)*scale;
-    image_xscale = scale;
-    image_yscale = scale;
-    draw_self();
-
-    //show_debug_message(lines);
-    for(var i=0;i&lt;array_height_2d(lines);i++) {
-        draw_set_colour(c_black);
-        draw_text((310)*scale, (130+(i*10))*scale-offsety, lines[i, 0]);
-        draw_text((270)*scale, (130+(i*10))*scale-offsety, lines[i, 1]);
-
-    }
-}
-
 
 if(type == "spr_bottom_ui"){
     //---draw hotbar---
@@ -155,9 +142,15 @@ if(type == "spr_bottom_ui"){
     draw_sprite_ext(obj_player_stats.inventory[2].sprite_index, 0, (startingx+53)*scale, (startingy+13)*scale, scale, scale, 0, -1, 1);
     draw_sprite_ext(obj_player_stats.inventory[3].sprite_index, 0, (startingx+76)*scale, (startingy+13)*scale, scale, scale, 0, -1, 1);
     draw_sprite_ext(obj_player_stats.inventory[4].sprite_index, 0, (startingx+99)*scale, (startingy+13)*scale, scale, scale, 0, -1, 1);
+        
+    //draw weapon info
+    draw_set_font(ft_orthogonal);
     
-    
-    
+    for(var i=0;i&lt;array_height_2d(lines);i++) {
+        draw_set_colour(c_black);
+        draw_text((300)*scale, (120+(i*10))*scale-offsety, lines[i, 1]);
+        draw_text((350)*scale, (120+(i*10))*scale-offsety, lines[i, 0]);
+    }
     
     //---draw health and exp bars---
     var hb_offsetx = x+60+(1*scale);

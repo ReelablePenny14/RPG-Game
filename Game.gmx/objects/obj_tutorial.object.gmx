@@ -100,7 +100,7 @@ if(tutorial_part == 0){
     if(dialog_num&lt;array_length_1d(dialog)) obj_control.game_state = FREEZE;
     
     if(!countdown and (round(x) != round(obj_player.x) or round(y) != round(obj_player.y-16))){
-        alarm[0] = 3*room_speed;
+        alarm[0] = 2*room_speed;
         countdown = true;
     }
     if(alarm[0] &lt;= 0 and countdown and obj_control.game_state == PLAY){
@@ -170,14 +170,11 @@ if(tutorial_part == 0){
     }
 
 } else if(tutorial_part == 4){
-    //this is a key
-    //some doors require keys to open
-    //to use the key on the door attempt to walk through the door and it will unlock if you have enough keys
-    //now you can walk through the door
-} else if(tutorial_part == 5){
-    //this is your very first weapon
-    //you can pick it up by pressing q on the keyboard or the "yellow" button on your controller
-    //to swing your weapon press the spacebar on your keyboard or the "red" button on your controller
+    if(obj_player_stats.keys&gt;0){
+        x = obj_door.x;
+        y = obj_door.y-16;
+        tutorial_part = 5;
+    }
 }
 </string>
           </argument>
@@ -204,13 +201,42 @@ if(tutorial_part == 0){
             <string>var scale = display_get_gui_width()/view_wview[0];
 if(dialog_num&lt;array_length_1d(dialog)) {
     draw_set_colour(c_black);
-    draw_sprite_ext(spr_notifaction, 0, display_get_gui_width()/2-(sprite_get_width(spr_notifaction)/2)*scale, 0, scale, scale, 0, -1, 1)
-    draw_text(display_get_gui_width()/2-(sprite_get_width(spr_notifaction)/2)*scale + 20, 20, dialog[dialog_num]);
+    var xx = display_get_gui_width()/2-(sprite_get_width(spr_notifaction)/2)*scale
+    var yy = 0
+    draw_sprite_ext(spr_notifaction, 0, xx, yy, scale, scale, 0, -1, 1)
+    draw_text_ext(xx+20, yy+20, dialog[dialog_num], 14, (sprite_get_width(spr_notifaction))*scale-30);
 } else {
     draw_set_colour(c_black);
-    draw_sprite_ext(spr_notifaction, 0, display_get_gui_width()-sprite_get_width(spr_notifaction)*scale, display_get_gui_height()-sprite_get_height(spr_notifaction)*scale, scale, scale, 0, -1, 1)
-    draw_text(display_get_gui_width()-sprite_get_width(spr_notifaction)*scale+20, display_get_gui_height()-sprite_get_height(spr_notifaction)*scale+20, quest_dialog);
+    var xx = display_get_gui_width()-sprite_get_width(spr_notifaction)*scale
+    var yy = display_get_gui_height()-sprite_get_height(spr_notifaction)*scale
+    draw_sprite_ext(spr_notifaction, 0, xx, yy, scale, scale, 0, -1, 1)
+    draw_text_ext(xx+20, yy+20, quest_dialog, 14, (sprite_get_width(spr_notifaction))*scale-30);
 }
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!freeze_part) draw_self();
+else if (tutorial_part != 0) draw_self();
 </string>
           </argument>
         </arguments>

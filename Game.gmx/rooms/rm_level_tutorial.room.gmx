@@ -101,7 +101,7 @@
     <instance objName="obj_wall" x="336" y="272" name="inst_593069E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="352" y="288" name="inst_389F6D68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="368" y="304" name="inst_5764320D" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="352" y="192" name="inst_3FFA914F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="352" y="192" name="inst_3FFA914F" locked="0" code="keys_required = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate_open" x="512" y="144" name="inst_325771E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gate_closed" x="512" y="144" name="inst_3D23ADCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pressure_plate" x="544" y="96" name="inst_44EB03C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

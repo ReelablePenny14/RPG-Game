@@ -42,8 +42,7 @@ if (obj_control.game_state == PLAY) {
     
     //destroy gui menu items
     with (obj_gui_parent) {
-        if (string_copy(type, 1, 8) == "gui_item") lines = noone;
-        else if (string_copy(type, 1, 8) == "gui_weap") lines = noone;
+        if (type == "spr_bottom_ui") lines = noone;
         else instance_destroy();
     }
 }

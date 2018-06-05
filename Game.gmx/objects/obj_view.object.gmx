@@ -70,6 +70,9 @@ if (instance_exists(obj_player)){
 if (instance_exists(obj_player) and obj_control.game_state == PLAY){ // This may change depending on if we want to do it with obj_player_show or not
     x += (obj_player_show.x - x+1) * spd;
     y += (obj_player_show.y - y+1) * spd;
+} else if (instance_exists(obj_tutorial) and !obj_tutorial.freeze_part){ // This may change depending on if we want to do it with obj_player_show or not
+    x += (obj_tutorial.x - x+1) / 10;
+    y += (obj_tutorial.y - y+1) / 10;
 } else if (target != -2 and obj_control.game_state == PLAY){
     //assign first view target
     target = 0;
