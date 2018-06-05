@@ -105,6 +105,8 @@
     <instance objName="obj_slime" x="288" y="224" name="inst_2C16845F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="176" y="48" name="inst_9F3BA838" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="240" y="48" name="inst_867DED4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bull" x="128" y="160" name="inst_B07E0E88" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bull" x="208" y="112" name="inst_A68CA664" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset" x="320" y="48" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_268B44F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -39,17 +39,17 @@ xmove = 0;
 ymove = 0;
 alarm[1] = 10;
 able_attack = false;
-move_chance = 0.10;
+move_chance = 0.30;
 state = scr_mob_move_state;
 
 //---define sprites for mob---
 
 //idle sprites
 idle_sprites = noone;
-idle_sprites[RIGHT] = spr_duck_right;
-idle_sprites[UP] = spr_duck_up;
-idle_sprites[LEFT] = spr_duck_left;
-idle_sprites[DOWN] = spr_duck_down;
+idle_sprites[RIGHT] = spr_duck_idle_right;
+idle_sprites[UP] = spr_duck_idle_up;
+idle_sprites[LEFT] = spr_duck_idle_left;
+idle_sprites[DOWN] = spr_duck_idle_down;
 
 //move sprites
 move_sprites = noone;
