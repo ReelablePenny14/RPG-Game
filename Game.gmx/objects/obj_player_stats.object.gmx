@@ -45,7 +45,7 @@ attack_spd = 30;
 
 
 inventory = noone;
-inventory[0] = obj_item_stats.weapon[1];
+inventory[0] = obj_item_stats.emptyw;
 inventory[1] = obj_item_stats.emptyi;
 inventory[2] = obj_item_stats.emptyi;
 inventory[3] = obj_item_stats.emptyi;

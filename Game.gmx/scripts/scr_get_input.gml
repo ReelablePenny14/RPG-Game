@@ -21,3 +21,5 @@ if (gamepad_is_connected(0)) {
     if(!attack_key) attack_key = gamepad_button_check(0, gp_face2);
     if(!switch_key) switch_key = gamepad_button_check_pressed(0, gp_face4);
 }
+
+if(right_key or up_key or left_key or down_key) continue_key = false;

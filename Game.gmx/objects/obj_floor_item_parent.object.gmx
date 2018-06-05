@@ -64,11 +64,12 @@ for(var j=0;j&lt;array_length_1d(obj_item_stats.weapon);j++){
     if (place_meeting(x, y, obj_player_show)){
         for(var i=0;i&lt;array_length_1d(obj_player_stats.inventory);i++){
             if(obj_player_stats.inventory[i].type == type){
-                var artifact = instance_create(x, y, obj_floor_item_parent);
-                artifact.sprite_index = obj_player_stats.inventory[i].display_sprite;
-                artifact.type = obj_player_stats.inventory[i].type;
+                if(obj_player_stats.inventory[i].sprite_index!=spr_empty){
+                    var artifact = instance_create(x, y, obj_floor_item_parent);
+                    artifact.sprite_index = obj_player_stats.inventory[i].display_sprite;
+                    artifact.type = obj_player_stats.inventory[i].type;
+                }
                 switch_items = true;
-                show_debug_message("1");
                 for(var j=0;j&lt;array_length_1d(obj_item_stats.weapon);j++){
                     if(obj_item_stats.weapon[j].display_sprite == sprite_index){
                         obj_player_stats.inventory[i] = obj_item_stats.weapon[j];
@@ -99,13 +100,11 @@ for(var j=0;j&lt;array_length_1d(obj_item_stats.weapon);j++){
                         }
                     }
                     switch_items = true;
-                    show_debug_message("2");
                     break;
                 }
             }
         }
         if(!switch_items){
-            show_debug_message("3");
             var artifact = instance_create(x, y, obj_floor_item_parent);
             artifact.sprite_index = obj_player_stats.inventory[obj_player_stats.inventory_select].display_sprite;
             artifact.type = obj_player_stats.inventory[obj_player_stats.inventory_select].type;

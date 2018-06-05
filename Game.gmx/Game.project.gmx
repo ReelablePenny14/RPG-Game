@@ -282,11 +282,13 @@
     <sprite>sprites\spr_pause_ui</sprite>
     <sprite>sprites\spr_pause_ui_inventory</sprite>
     <sprite>sprites\spr_pause_ui_quest</sprite>
+    <sprite>sprites\spr_pause_ui_map</sprite>
     <sprite>sprites\spr_tab_selected</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_map</sprite>
     <sprite>sprites\spr_map_town01</sprite>
     <sprite>sprites\spr_map_tutorial</sprite>
+    <sprite>sprites\spr_map_stonepoint</sprite>
     <sprite>sprites\spr_notifaction</sprite>
     <sprite>sprites\spr_cursor</sprite>
   </sprites>
@@ -374,9 +376,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_tutorial2</room>
+    <room>rooms\rm_tutorial1</room>
     <room>rooms\rm_test1</room>
     <room>rooms\rm_test</room>
-    <room>rooms\rm_level_tutorial</room>
     <room>rooms\rm_level04</room>
     <room>rooms\rm_level03</room>
     <room>rooms\rm_level01</room>

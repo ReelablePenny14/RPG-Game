@@ -111,7 +111,6 @@ if(tutorial_part == 0){
         dialog[0] = "This is a Pressure Plate"
         dialog[1] = "If you stand on it the gate lowers"
         obj_control.game_state = FREEZE;
-        visible = true;
         x = obj_pressure_plate.x;
         y = obj_pressure_plate.y-16;
         freeze_part = false;
@@ -125,7 +124,6 @@ if(tutorial_part == 0){
         dialog = noone;
         dialog[0] = "You can also activate a Pressure Plate by moving wooden boxes over it"
         obj_control.game_state = FREEZE;
-        visible = true;
         x = obj_moveable_wall.x;
         y = obj_moveable_wall.y-16;
         freeze_part = false;
@@ -141,7 +139,6 @@ if(tutorial_part == 0){
         dialog[1] = "If you walk against the lever it will turn on/off"
         dialog[2] = "Levers can be used to open or close gates"
         obj_control.game_state = FREEZE;
-        visible = true;
         x = obj_lever.x;
         y = obj_lever.y-16;
         freeze_part = false;
@@ -162,7 +159,6 @@ if(tutorial_part == 0){
         dialog[2] = "Having enough keys will allow you to progress"
         dialog[3] = "Go through the Door to continue to the next area"
         obj_control.game_state = FREEZE;
-        visible = true;
         x = obj_key.x;
         y = obj_key.y-16;
         freeze_part = false;
@@ -174,6 +170,58 @@ if(tutorial_part == 0){
         x = obj_door.x;
         y = obj_door.y-16;
         tutorial_part = 5;
+    }
+}  else if(tutorial_part == 5){
+    //this is the end of tutorial room 1
+}  else if(tutorial_part == 6){
+    //this is the start of tutorial room 2
+    if(obj_player_stats.inventory[0].sprite_index!=spr_empty){
+        tutorial_part = 7;
+        dialog_num = 0;
+        dialog = noone;
+        dialog[0] = "This is a item";
+        dialog[1] = "You can view the stats of your weapons/items in the pause menu";
+        x = obj_shield_artifact.x;
+        y = obj_shield_artifact.y-16;
+        obj_control.game_state = FREEZE;
+        freeze_part = false;
+        quest_dialog = "Pickup the item and see the stats of the weapons/items you picked up";
+    }
+}  else if(tutorial_part == 7){
+    if(obj_player_stats.inventory[1].sprite_index!=spr_empty){
+        tutorial_part = 8;
+    }
+}  else if(tutorial_part == 8){
+    with(obj_gui_parent){
+        if(type == "spr_bottom_ui" and lines != noone){
+            other.dialog = noone;
+        }
+    }
+    if(dialog = noone and obj_control.game_state == PLAY){
+        tutorial_part = 9;
+        dialog_num = 0;
+        dialog = noone;
+        dialog[0] = "This is an enemy";
+        dialog[1] = "To use your weapon press the spacebar";
+        dialog[2] = "For controllers, use the B button";
+        x = obj_slime.x;
+        y = obj_slime.y-16;
+        freeze_part = false;
+        obj_control.game_state = FREEZE;
+        quest_dialog = "Kill the enemy";
+        obj_player.can_fight = true;
+    }
+} else if(tutorial_part == 9){
+    if(!instance_exists(obj_slime)){
+        tutorial_part = 10;
+        dialog_num = 0;
+        dialog = noone;
+        dialog[0] = "Congratulations you have finished the tutorial!";
+        x = obj_door.x;
+        y = obj_door.y-16;
+        freeze_part = false;
+        obj_control.game_state = FREEZE;
+        quest_dialog = "Go through the door to continue with your journey";
     }
 }
 </string>

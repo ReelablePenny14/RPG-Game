@@ -68,7 +68,7 @@ tab_num = -1;
     for(var i=0; i&lt;5; i++){
         mouse_over = point_in_rectangle(mouse_x-view_xview[0], mouse_y-view_yview[0], x/scale+7+i*23, y/scale+13, x/scale+7+i*23+16, y/scale+13+16);
         if (mouse_over and mouse_check_button_pressed(mb_left) and obj_control.game_state == PAUSE) {
-            lines = 0;
+            lines = noone;
             lines = scr_draw_item_stats(obj_player_stats.inventory[i], i);
         }
     }
@@ -223,8 +223,7 @@ if(tab_num != -1){
             break;
         case 1:
             draw_sprite(spr_tab_selected, 0, x+1+(17*1), y+1);
-            draw_set_colour(c_yellow);
-            draw_rectangle(x, y+20, x+40, y+40, 0);
+            draw_sprite(spr_pause_ui_map, 0, x, y);
             break;
         case 2:
             draw_sprite(spr_tab_selected, 0, x+1+(17*2), y+1);
@@ -233,8 +232,7 @@ if(tab_num != -1){
             break;
         case 3:
             draw_sprite(spr_tab_selected, 0, x+1+(17*3), y+1);
-            draw_set_colour(c_blue);
-            draw_rectangle(x, y+20, x+40, y+40, 0);
+            draw_sprite(spr_pause_ui_quest, 0, x, y);
             break;
         case 4:
             draw_sprite(spr_tab_selected, 0, x+1+(17*4), y+1);

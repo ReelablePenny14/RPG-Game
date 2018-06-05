@@ -23,7 +23,7 @@ if (alarm[0] == -1) {
 
 
 //attack_state (move to own script later)
-if(obj_input.attack_key and obj_player.alarm[1] == -1 and obj_player.can_fight) {
+if(obj_input.attack_key and obj_player.alarm[1] == -1 and obj_player.can_fight and obj_player_stats.inventory[0].sprite_index!=spr_empty) {
     if (obj_player_show.sprite_index==idle_sprites[RIGHT]){
         var owa = instance_create(obj_player_show.x+4, obj_player_show.y+4, obj_weapon_animation);
         owa.dir = 0;
