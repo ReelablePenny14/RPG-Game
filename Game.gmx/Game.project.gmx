@@ -210,14 +210,14 @@
     </sprites>
     <sprites name="mobs">
       <sprites name="slime">
-        <sprite>sprites\spr_slime_attack_right</sprite>
-        <sprite>sprites\spr_slime_right</sprite>
-        <sprite>sprites\spr_slime_attack_left</sprite>
         <sprite>sprites\spr_slime_left</sprite>
+        <sprite>sprites\spr_slime_attack_left</sprite>
+        <sprite>sprites\spr_slime_down</sprite>
+        <sprite>sprites\spr_slime_attack_down</sprite>
         <sprite>sprites\spr_slime_attack_up</sprite>
         <sprite>sprites\spr_slime_up</sprite>
-        <sprite>sprites\spr_slime_attack_down</sprite>
-        <sprite>sprites\spr_slime_down</sprite>
+        <sprite>sprites\spr_slime_right</sprite>
+        <sprite>sprites\spr_slime_attack_right</sprite>
       </sprites>
       <sprites name="duck">
         <sprite>sprites\spr_duck_right</sprite>
@@ -287,6 +287,7 @@
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_map</sprite>
     <sprite>sprites\spr_map_town01</sprite>
+    <sprite>sprites\spr_map_stonepoint</sprite>
     <sprite>sprites\spr_map_tutorial</sprite>
     <sprite>sprites\spr_map_stonepoint</sprite>
     <sprite>sprites\spr_notifaction</sprite>
