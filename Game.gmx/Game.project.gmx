@@ -408,9 +408,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_tutorial_quest</room>
     <room>rooms\rm_tutorial1</room>
     <room>rooms\rm_tutorial2</room>
-    <room>rooms\rm_tutorial_quest</room>
     <room>rooms\rm_test1</room>
     <room>rooms\rm_level01</room>
     <room>rooms\rm_test</room>
