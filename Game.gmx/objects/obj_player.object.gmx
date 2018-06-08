@@ -93,10 +93,22 @@ if(obj_player.target==noone){
     obj_player.state = scr_move_state;
 } else {
     var owa = instance_create(obj_player_show.x+4, obj_player_show.y+4, obj_weapon_animation);
-    if (obj_player_show.sprite_index==idle_sprites[RIGHT]) owa.dir = 0;
-    else if (obj_player_show.sprite_index==idle_sprites[LEFT]) owa.dir = 2;
-    else if (obj_player_show.sprite_index==idle_sprites[UP]) owa.dir = 1;
-    else if (obj_player_show.sprite_index==idle_sprites[DOWN]) owa.dir = 3;
+    if (obj_player_show.sprite_index==idle_sprites[RIGHT]){
+        owa.dir = 0;
+        obj_player_show.sprite_index=attack_sprites[RIGHT];
+    }
+    else if (obj_player_show.sprite_index==idle_sprites[LEFT]){
+        owa.dir = 2;
+        obj_player_show.sprite_index=attack_sprites[LEFT];
+    }
+    else if (obj_player_show.sprite_index==idle_sprites[UP]){
+        owa.dir = 1;
+        obj_player_show.sprite_index=attack_sprites[UP];
+    }
+    else if (obj_player_show.sprite_index==idle_sprites[DOWN]){
+        owa.dir = 3;
+        obj_player_show.sprite_index=attack_sprites[DOWN];
+    }
     obj_player.alarm[1] = obj_player_stats.attack_spd;
     owa.image_angle = (owa.dir*90)+45;
 } 

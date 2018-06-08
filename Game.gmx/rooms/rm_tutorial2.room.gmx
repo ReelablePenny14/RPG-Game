@@ -53,8 +53,8 @@
   <instances>
     <instance objName="obj_control" x="656" y="48" name="inst_D7348137" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_player" x="464" y="80" name="inst_E4E290DF" locked="0" code="can_fight = false;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_view" x="672" y="48" name="inst_66C4D8B7" locked="0" code="/*&#xA;finish[0, 0] = 100;&#xA;finish[0, 1] = 100;&#xA;scene_sec[0] = 3;&#xA;finish[1, 0] = 300;&#xA;finish[1, 1] = 300;&#xA;scene_sec[1] = 2;&#xA;finish[2, 0] = obj_player.x;&#xA;finish[2, 1] = obj_player.y;&#xA;scene_sec[2] = 1;&#xA;x = 608;&#xA;y = 352;&#xA;x = max(min(x, view_wview[0]/2), room_width-view_wview[0]/2)&#xA;y = max(min(y, view_hview[0]/2), room_height-view_hview[0]/2)&#xA;target = -1;&#xA;*/&#xA;&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tutorial" x="640" y="48" name="inst_4D253E75" locked="0" code="dialog = noone;&#xA;dialog[0] = &quot;This is a weapon&quot;;&#xA;dialog[1] = &quot;Use Q to pickup the weapon&quot;;&#xA;dialog[2] = &quot;For controllers, use the Y button&quot;;&#xA;quest_dialog = &quot;Pickup the weapon&quot;;&#xA;tutorial_part = 6;&#xA;x=obj_sword.x;&#xA;y=obj_sword.y-16;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_view" x="672" y="48" name="inst_66C4D8B7" locked="0" code="/*&#xA;finish[0, 0] = 100;&#xA;finish[0, 1] = 100;&#xA;scene_sec[0] = 3;&#xA;finish[1, 0] = 300;&#xA;finish[1, 1] = 300;&#xA;scene_sec[1] = 2;&#xA;finish[2, 0] = obj_player.x;&#xA;finish[2, 1] = obj_player.y;&#xA;scene_sec[2] = 1;&#xA;x = 608;&#xA;y = 352;&#xA;x = max(min(x, view_wview[0]/2), room_width-view_wview[0]/2)&#xA;y = max(min(y, view_hview[0]/2), room_height-view_hview[0]/2)&#xA;target = -1;&#xA;*/" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorial" x="640" y="48" name="inst_4D253E75" locked="0" code="dialog = noone;&#xA;dialog[0] = &quot;This is a weapon&quot;;&#xA;dialog[1] = &quot;Use Q to pickup the weapon&quot;;&#xA;dialog[2] = &quot;For controllers, use the Y button&quot;;&#xA;quest_dialog = &quot;Pickup the weapon&quot;;&#xA;tutorial_part = 6;&#xA;x=obj_sword.x;&#xA;y=obj_sword.y-16;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="528" y="128" name="inst_F53054FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="544" y="112" name="inst_53C90F04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="576" y="112" name="inst_A11619BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -98,9 +98,9 @@
     <instance objName="obj_wall" x="336" y="272" name="inst_593069E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="352" y="288" name="inst_389F6D68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="368" y="304" name="inst_5764320D" locked="0" code="" scaleX="7" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="352" y="192" name="inst_3FFA914F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="496" y="256" name="inst_6E10DE06" locked="0" code="move_chance = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sword" x="512" y="168" name="inst_1C25A4A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="352" y="192" name="inst_3FFA914F" locked="0" code="keys_required = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="496" y="256" name="inst_6E10DE06" locked="0" code="item_drop = obj_key;&#xA;move_chance = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sword" x="512" y="160" name="inst_1C25A4A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shield_artifact" x="544" y="192" name="inst_38FB5A1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

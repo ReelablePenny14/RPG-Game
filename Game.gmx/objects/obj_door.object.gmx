@@ -86,7 +86,7 @@ if(place_meeting(x, y, obj_player_show) and darken = 0){
         alarm[0] = room_speed;
         darken = 0;   
         darken_step = 1/room_speed;
-        obj_control.game_state = FREEZE;
+        obj_control.game_state = TRANSITION;
     }
     
 }

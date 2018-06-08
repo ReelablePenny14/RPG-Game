@@ -53,7 +53,7 @@
   <instances>
     <instance objName="obj_control" x="656" y="48" name="inst_D7348137" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="672" y="48" name="inst_66C4D8B7" locked="0" code="/*&#xA;finish[0, 0] = 100;&#xA;finish[0, 1] = 100;&#xA;scene_sec[0] = 3;&#xA;finish[1, 0] = 300;&#xA;finish[1, 1] = 300;&#xA;scene_sec[1] = 2;&#xA;finish[2, 0] = obj_player.x;&#xA;finish[2, 1] = obj_player.y;&#xA;scene_sec[2] = 1;&#xA;x = 608;&#xA;y = 352;&#xA;x = max(min(x, view_wview[0]/2), room_width-view_wview[0]/2)&#xA;y = max(min(y, view_hview[0]/2), room_height-view_hview[0]/2)&#xA;target = -1;&#xA;*/&#xA;&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_house01" x="352" y="224" name="inst_D385740E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_house01" x="352" y="208" name="inst_D385740E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="432" y="240" name="inst_4AA74908" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="368" y="208" name="inst_C24B54E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="256" y="240" name="inst_F395ADF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -65,6 +65,7 @@
     <instance objName="obj_tree_oak" x="416" y="336" name="inst_082D02A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="464" y="368" name="inst_B496BBC7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="544" y="240" name="inst_63BFDDB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_shop" x="440" y="160" name="inst_6AA09BD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="DungeonV10" x="560" y="288" w="16" h="16" xo="16" yo="128" id="10002370" name="inst_043FA5FC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -586,6 +587,8 @@
     <tile bgName="DungeonV10" x="208" y="352" w="16" h="16" xo="48" yo="144" id="10003116" name="inst_68626CFC" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="288" y="368" w="16" h="16" xo="48" yo="144" id="10003117" name="inst_79ADF963" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="352" y="288" w="16" h="16" xo="48" yo="144" id="10003118" name="inst_B811E845" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="DungeonV10" x="384" y="288" w="16" h="16" xo="0" yo="208" id="10004439" name="inst_87EF6272" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="DungeonV10" x="496" y="272" w="16" h="16" xo="0" yo="208" id="10004440" name="inst_341AA80B" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="304" y="240" w="16" h="16" xo="144" yo="192" id="10002999" name="inst_BA5B10C5" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="288" y="240" w="16" h="16" xo="144" yo="192" id="10003000" name="inst_8A735321" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="272" y="240" w="16" h="16" xo="144" yo="192" id="10003001" name="inst_8D2C3945" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

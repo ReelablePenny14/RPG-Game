@@ -61,7 +61,7 @@ for(var j=0;j&lt;array_length_1d(obj_item_stats.weapon);j++){
             <kind>1</kind>
             <string>if(obj_input.switch_key){
     var switch_items = false;
-    if (place_meeting(x, y, obj_player_show)){
+    if (place_meeting(x, y, obj_player_show) and obj_player.state == scr_move_state and obj_player_stats.inventory[0].sprite_index != spr_duck_idle_down){
         for(var i=0;i&lt;array_length_1d(obj_player_stats.inventory);i++){
             if(obj_player_stats.inventory[i].type == type){
                 if(obj_player_stats.inventory[i].sprite_index!=spr_empty){
@@ -120,8 +120,10 @@ for(var j=0;j&lt;array_length_1d(obj_item_stats.weapon);j++){
             }
         }
         instance_destroy();
+        obj_input.switch_key = false;
     }
 }
+
 </string>
           </argument>
         </arguments>

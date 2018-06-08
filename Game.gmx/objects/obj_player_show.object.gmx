@@ -54,12 +54,13 @@ image_speed = 7/room_speed;
           <argument>
             <kind>1</kind>
             <string>///Smooth player movement to next tile
-if(obj_control.game_state == FREEZE or obj_control.game_state == PLAY){
-//with (obj_player_show) {
-    if(obj_player.alarm[0]&lt;=0){
+if(obj_control.game_state != PAUSE){
+
+    if(obj_player.alarm[0] &lt;= 0){
         xmove = 0;
         ymove = 0;
     }
+
     phy_position_x += xmove;
     phy_position_y += ymove;
 

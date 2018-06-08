@@ -9,7 +9,7 @@ var setmoves = false;
 
 //find id of moveable_wall
 wall = instance_place(xx+cx, yy+cy, obj_moveable_wall)
-var door = instance_place(xx+cx, yy+cy, obj_door)
+door = instance_place(xx+cx, yy+cy, obj_door)
 
 //move the moveable_wall obj if you can
 if(place_meeting(xx+cx, yy+cy, obj_wall)) return true;
@@ -33,6 +33,12 @@ if(place_meeting(xx+cx, yy+cy, obj_door)){
             return true;
         }
     }
+}
+if(place_meeting(xx+cx, yy+cy, obj_talking_npc)){ 
+    var npc = instance_place(xx+cx, yy+cy, obj_talking_npc);
+    npc.player_wants_to_talk = true;
+    obj_player.alarm[0] = obj_player.move_spd;
+    return true;
 }
 if(wall!=noone){
     if(place_meeting(xx+cx*2, yy+cy*2, obj_moveable_wall)) return true;
@@ -64,7 +70,7 @@ if (!setmoves){
     if(place_meeting(xx+cx, yy+cy, obj_ladder)) obj_player_show.image_speed = 3/room_speed;
     else obj_player_show.image_speed = 7/room_speed;
 }
-return false;
+return false; //player can move
 
 
 

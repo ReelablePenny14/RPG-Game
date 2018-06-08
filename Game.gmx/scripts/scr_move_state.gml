@@ -85,5 +85,12 @@ if(obj_player_show.xmove==0 and obj_player_show.ymove==0){
     else if (obj_player_show.sprite_index==obj_player.move_sprites[LEFT]) {obj_player_show.sprite_index=obj_player.idle_sprites[LEFT]; obj_player_show.image_speed = 3/room_speed;}
     else if (obj_player_show.sprite_index==obj_player.move_sprites[DOWN]) {obj_player_show.sprite_index=obj_player.idle_sprites[DOWN]; obj_player_show.image_speed = 3/room_speed;}
     
+    //drop duckling (for quest only)
+    if(obj_input.switch_key and obj_player_stats.inventory[0].display_sprite==obj_duck.idle_sprites[DOWN]){
+        var duck = instance_create(x, y, obj_duck);
+        duck.type = 0;
+        duck.able_to_be_picked_up = true;
+        obj_player_stats.inventory[0] = obj_item_stats.emptyw;
+    }
 }
 

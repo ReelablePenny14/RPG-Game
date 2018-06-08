@@ -52,12 +52,43 @@ inventory[3] = obj_item_stats.emptyi;
 inventory[4] = obj_item_stats.emptyi;
 starting_inventory = inventory;
 
-
+//for world select
 var player = 1;
 var total = 0;
 world_complete = noone
 world_complete[0, total] = 100;
 world_complete[0, player] = 30;
+
+//for quests
+quest_log = noone;
+current_quest = -1;
+//quest_log[quest number,
+//0 = completed or currently working on (if completed show reward received)
+//1 = quest_dialog (what to do next)
+//2 = quest title
+//2 = other info about the quest?
+
+//examples for testing only
+quest_log[0, 0] = false;
+quest_log[0, 1] = "Title of Quest0";
+quest_log[0, 2] = "Do this next0";
+
+
+quest_log[1, 0] = true;
+quest_log[1, 1] = "Title of Quest1";
+quest_log[1, 2] = "Do this next1";
+
+
+quest_log[2, 0] = true;
+quest_log[2, 1] = "Title of Quest2";
+quest_log[2, 2] = "Do this next2";
+
+
+quest_log[3, 0] = false;
+quest_log[3, 1] = "Title of Quest3";
+quest_log[3, 2] = "Do this next3";
+
+
 </string>
           </argument>
         </arguments>
@@ -153,12 +184,23 @@ starting_inventory = inventory;
           <argument>
             <kind>1</kind>
             <string>/// Draw stats
+var scale = display_get_gui_width()/view_wview[0];
 if(obj_control.game_state == PLAY) {
     draw_set_colour(c_black);
-    draw_text(32,16, "Health: "+string(hp)+"/"+string(maxhp));
-    draw_text(32,32, "Level: "+string(level));
-    draw_text(32,48, "Keys: "+string(keys));
-    draw_text(32,64, "Deaths: "+string(deaths));
+    draw_text(92,16, "Health: "+string(hp)+"/"+string(maxhp));
+    draw_text(92,32, "Level: "+string(level));
+    draw_text(92,48, "Keys: "+string(keys));
+    draw_text(92,64, "Deaths: "+string(deaths));
+}
+
+if(current_quest &gt; 0 and obj_control.game_state == PLAY) {
+    if(array_height_2d(quest_log) &gt; current_quest){
+        draw_set_colour(c_black);
+        var xx = display_get_gui_width()-sprite_get_width(spr_notification_bottom)*scale
+        var yy = display_get_gui_height()-sprite_get_height(spr_notification_bottom)*scale
+        draw_sprite_ext(spr_notification_bottom, 0, xx, yy, scale, scale, 0, -1, 1)
+        draw_text_ext(xx+20, yy+20, quest_log[current_quest, 2], 14, (sprite_get_width(spr_notification_bottom))*scale-30);
+    }
 }
 </string>
           </argument>

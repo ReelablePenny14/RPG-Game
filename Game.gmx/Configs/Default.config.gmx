@@ -686,7 +686,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="11">
+    <constants number="12">
       <constant name="RIGHT">0</constant>
       <constant name="UP">1</constant>
       <constant name="LEFT">2</constant>
@@ -698,6 +698,7 @@
       <constant name="PAUSE">1</constant>
       <constant name="MENU">2</constant>
       <constant name="FREEZE">3</constant>
+      <constant name="TRANSITION">4</constant>
     </constants>
   </ConfigConstants>
 </Config>

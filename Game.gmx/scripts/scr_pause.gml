@@ -15,6 +15,7 @@ if (obj_control.game_state == PLAY) {
     temp_g.tab_num = 0;
     
     
+    
     /* old inventory
     //create key slot
     scr_create_gui(view_xview[0] + 179, view_yview[0] + 105, spr_key, 2, obj_player_stats.keys);

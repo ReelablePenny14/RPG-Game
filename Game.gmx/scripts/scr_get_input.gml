@@ -10,7 +10,7 @@ continue_key = keyboard_check_pressed(vk_anykey);
 attack_key = keyboard_check(vk_space);
 switch_key = keyboard_check_pressed(ord('Q'));
 
-// Check for gamepad input (overrides keyboard input)
+// Check for gamepad input
 if (gamepad_is_connected(0)) {
     if(!right_key) right_key = (gamepad_axis_value(0, gp_axislh) >= 0.5);
     if(!left_key) left_key = (gamepad_axis_value(0, gp_axislh) <= -0.5);

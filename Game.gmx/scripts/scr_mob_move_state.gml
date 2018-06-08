@@ -53,6 +53,8 @@ if(obj_control.game_state == PLAY){
         else if(place_meeting(x+xmove, y+ymove, obj_moveable_wall)){xmove=0; ymove=0;}
         else if(place_meeting(x+xmove, y+ymove, obj_player)){xmove=0; ymove=0;}
         else if(x+xmove>startingx+radius*16 or x+xmove<startingx-radius*16 or y+ymove>startingy+radius*16 or y+ymove<startingy-radius*16){xmove=0; ymove=0;}
+        //for the duckling quest only
+        else if(instance_exists(obj_farmer) and place_meeting(x, y, obj_objective_area) and !place_meeting(x+xmove, y+ymove, obj_objective_area)){xmove=0; ymove=0;}
     }
     //---change sprite based on direction its moving and speed---
     if(xmove>0){
@@ -71,9 +73,16 @@ if(obj_control.game_state == PLAY){
         else if(sprite_index == move_sprites[DOWN]) sprite_index = idle_sprites[DOWN];
     
     }
+
+}
+if(obj_control.game_state != PAUSE){
+    if(alarm[1] = -1 and obj_player.target!=self){
+        xmove = 0;
+        ymove = 0;
+    }
     //---move mob---
     //add one because otherwise it messes things up
     phy_position_x += xmove/(move_spd+1);
     phy_position_y += ymove/(move_spd+1);
-
 }
+
