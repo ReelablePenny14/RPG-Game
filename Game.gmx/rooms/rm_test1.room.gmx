@@ -104,7 +104,6 @@
     <instance objName="obj_tree_oak" x="128" y="96" name="inst_816F3099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="240" y="96" name="inst_4C2FC9B4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_oak" x="208" y="240" name="inst_3602DDD9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="288" y="144" name="inst_2F05695B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_axe" x="192" y="192" name="inst_F1354223" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mace" x="256" y="144" name="inst_DE747806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Gsword" x="208" y="80" name="inst_21E71A55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -114,7 +113,6 @@
     <instance objName="obj_shop" x="400" y="0" name="inst_389015E4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle" x="336" y="112" name="inst_67A09D51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_house02" x="208" y="0" name="inst_3D0EEB6C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="224" y="128" name="inst_54B9CCDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset" x="320" y="48" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_268B44F4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
