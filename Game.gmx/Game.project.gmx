@@ -271,14 +271,28 @@
     </sprites>
     <sprites name="npc">
       <sprites name="npc_01">
-        <sprite>sprites\spr_npc01_idle_up</sprite>
         <sprite>sprites\spr_npc01_idle_left</sprite>
         <sprite>sprites\spr_npc01_idle_right</sprite>
+        <sprite>sprites\spr_npc01_idle_up</sprite>
         <sprite>sprites\spr_npc01_idle_down</sprite>
+        <sprite>sprites\spr_npc01_attack_left</sprite>
+        <sprite>sprites\spr_npc01_attack_right</sprite>
+        <sprite>sprites\spr_npc01_attack_up</sprite>
+        <sprite>sprites\spr_npc01_attack_down</sprite>
         <sprite>sprites\spr_npc01_left</sprite>
-        <sprite>sprites\spr_npc01_down</sprite>
-        <sprite>sprites\spr_npc01_up</sprite>
         <sprite>sprites\spr_npc01_right</sprite>
+        <sprite>sprites\spr_npc01_up</sprite>
+        <sprite>sprites\spr_npc01_down</sprite>
+      </sprites>
+      <sprites name="npc_02">
+        <sprite>sprites\spr_npc02_idle_left</sprite>
+        <sprite>sprites\spr_npc02_idle_right</sprite>
+        <sprite>sprites\spr_npc02_idle_up</sprite>
+        <sprite>sprites\spr_npc02_idle_down</sprite>
+        <sprite>sprites\spr_npc02_left</sprite>
+        <sprite>sprites\spr_npc02_right</sprite>
+        <sprite>sprites\spr_npc02_up</sprite>
+        <sprite>sprites\spr_npc02_down</sprite>
       </sprites>
       <sprites name="NPC_Farmer">
         <sprite>sprites\spr_npc_farmer</sprite>
@@ -298,9 +312,13 @@
     <sprite>sprites\spr_key</sprite>
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_tree_pine</sprite>
+    <sprite>sprites\spr_lillypad</sprite>
     <sprite>sprites\spr_tree_oak</sprite>
     <sprite>sprites\spr_tree_aspen</sprite>
     <sprite>sprites\spr_tree_apple</sprite>
+    <sprite>sprites\spr_pillar01</sprite>
+    <sprite>sprites\spr_pillar02</sprite>
+    <sprite>sprites\spr_pillar03</sprite>
     <sprite>sprites\spr_tree_stump01</sprite>
     <sprite>sprites\spr_tree_stump02</sprite>
     <sprite>sprites\spr_lever</sprite>
@@ -377,8 +395,9 @@
     <object>objects\obj_gate_closed</object>
     <object>objects\obj_gate_open</object>
     <object>objects\obj_slime</object>
-    <object>objects\obj_duck</object>
     <object>objects\obj_npc01</object>
+    <object>objects\obj_duck</object>
+    <object>objects\obj_npc02</object>
     <object>objects\obj_bull</object>
     <object>objects\obj_weapon_animation</object>
     <object>objects\obj_damage</object>
@@ -387,7 +406,9 @@
     <object>objects\obj_door</object>
     <object>objects\obj_tree_pine</object>
     <object>objects\obj_grass</object>
+    <object>objects\obj_lillypad</object>
     <object>objects\obj_tree_oak</object>
+    <object>objects\obj_pillar</object>
     <object>objects\obj_ladder</object>
     <object>objects\obj_item_stats</object>
     <object>objects\obj_weapon</object>
