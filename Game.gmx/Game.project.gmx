@@ -272,13 +272,16 @@
     <sprites name="npc">
       <sprites name="npc_01">
         <sprite>sprites\spr_npc01_idle_up</sprite>
-        <sprite>sprites\spr_npc01_left</sprite>
+        <sprite>sprites\spr_npc01_idle_left</sprite>
+        <sprite>sprites\spr_npc01_idle_right</sprite>
         <sprite>sprites\spr_npc01_idle_down</sprite>
+        <sprite>sprites\spr_npc01_left</sprite>
         <sprite>sprites\spr_npc01_down</sprite>
         <sprite>sprites\spr_npc01_up</sprite>
         <sprite>sprites\spr_npc01_right</sprite>
-        <sprite>sprites\spr_npc01_idle_left</sprite>
-        <sprite>sprites\spr_npc01_idle_right</sprite>
+      </sprites>
+      <sprites name="NPC_Farmer">
+        <sprite>sprites\spr_npc_farmer</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_wall</sprite>
@@ -296,6 +299,10 @@
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_tree_pine</sprite>
     <sprite>sprites\spr_tree_oak</sprite>
+    <sprite>sprites\spr_tree_aspen</sprite>
+    <sprite>sprites\spr_tree_apple</sprite>
+    <sprite>sprites\spr_tree_stump01</sprite>
+    <sprite>sprites\spr_tree_stump02</sprite>
     <sprite>sprites\spr_lever</sprite>
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_hit_indicator</sprite>
@@ -307,6 +314,7 @@
     <sprite>sprites\spr_tab_selected</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_map</sprite>
+    <sprite>sprites\spr_grass</sprite>
     <sprite>sprites\spr_map_town01</sprite>
     <sprite>sprites\spr_map_stonepoint</sprite>
     <sprite>sprites\spr_map_tutorial</sprite>
@@ -370,6 +378,7 @@
     <object>objects\obj_gate_open</object>
     <object>objects\obj_slime</object>
     <object>objects\obj_duck</object>
+    <object>objects\obj_npc01</object>
     <object>objects\obj_bull</object>
     <object>objects\obj_weapon_animation</object>
     <object>objects\obj_damage</object>
@@ -377,6 +386,7 @@
     <object>objects\obj_moveable_wall</object>
     <object>objects\obj_door</object>
     <object>objects\obj_tree_pine</object>
+    <object>objects\obj_grass</object>
     <object>objects\obj_tree_oak</object>
     <object>objects\obj_ladder</object>
     <object>objects\obj_item_stats</object>
@@ -408,6 +418,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_island_stonepoint</room>
     <room>rooms\rm_tutorial_quest</room>
     <room>rooms\rm_tutorial1</room>
     <room>rooms\rm_tutorial2</room>
@@ -416,7 +427,6 @@
     <room>rooms\rm_test</room>
     <room>rooms\rm_level_incipien</room>
     <room>rooms\rm_level04</room>
-    <room>rooms\rm_island_stonepoint</room>
     <room>rooms\rm_island_stonepoint_barn</room>
     <room>rooms\rm_island_stonepoint_cave</room>
     <room>rooms\rm_town_incipien</room>
