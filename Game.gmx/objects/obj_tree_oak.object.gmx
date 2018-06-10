@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
-sprite_index = choose(spr_tree_oak, spr_tree_aspen, spr_tree_apple, spr_tree_stump01, spr_tree_stump02);
+            <string>image_speed = choose(.02, .03, .04, .05);
+sprite_index = choose(spr_tree_oak, spr_tree_aspen, spr_tree_apple);
 </string>
           </argument>
         </arguments>
