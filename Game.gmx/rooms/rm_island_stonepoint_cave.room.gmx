@@ -64,6 +64,7 @@
     <instance objName="obj_torch" x="256" y="205" name="inst_249CDAD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="256" y="272" name="inst_81AC84DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="240" y="288" name="inst_2EA9843D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="240" y="272" name="inst_9EAFE691" locked="0" code="sprite_index = spr_fade01;&#xA;next_room = rm_island_stonepoint;&#xA;depth = -2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="interior" x="256" y="224" w="16" h="16" xo="48" yo="112" id="10004039" name="inst_2EF18819" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -112,7 +113,6 @@
     <tile bgName="interior" x="208" y="272" w="16" h="16" xo="16" yo="112" id="10004091" name="inst_2A31712E" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="interior" x="224" y="272" w="16" h="16" xo="16" yo="112" id="10004092" name="inst_898699EB" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="interior" x="256" y="272" w="16" h="16" xo="16" yo="112" id="10004093" name="inst_EE19E2D4" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="interior" x="240" y="256" w="16" h="16" xo="64" yo="112" id="10004094" name="inst_85FED86A" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="192" y="224" w="16" h="16" xo="0" yo="80" id="10006935" name="inst_48633029" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="192" y="272" w="16" h="16" xo="0" yo="80" id="10006936" name="inst_AD46D5D6" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="-1"/>
     <tile bgName="DungeonV10" x="272" y="272" w="16" h="16" xo="0" yo="80" id="10006937" name="inst_3A79E300" depth="100000" locked="0" colour="4294967295" scaleX="-1" scaleY="-1"/>

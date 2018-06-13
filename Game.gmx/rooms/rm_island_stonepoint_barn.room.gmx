@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_control" x="320" y="176" name="inst_D7348137" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="240" y="256" name="inst_E606B1EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="240" y="240" name="inst_E606B1EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_view" x="336" y="176" name="inst_66C4D8B7" locked="0" code="/*&#xA;finish[0, 0] = 100;&#xA;finish[0, 1] = 100;&#xA;scene_sec[0] = 3;&#xA;finish[1, 0] = 300;&#xA;finish[1, 1] = 300;&#xA;scene_sec[1] = 2;&#xA;finish[2, 0] = obj_player.x;&#xA;finish[2, 1] = obj_player.y;&#xA;scene_sec[2] = 1;&#xA;x = 608;&#xA;y = 352;&#xA;x = max(min(x, view_wview[0]/2), room_width-view_wview[0]/2)&#xA;y = max(min(y, view_hview[0]/2), room_height-view_hview[0]/2)&#xA;target = -1;&#xA;*/&#xA;&#xA;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_lighting" x="304" y="176" name="inst_83A71CDA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="288" y="160" name="inst_58329FB5" locked="0" code="" scaleX="1" scaleY="6" colour="4294967295" rotation="0"/>
@@ -63,6 +63,7 @@
     <instance objName="obj_wall" x="208" y="144" name="inst_64553578" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_torch" x="208" y="160" name="inst_373C4356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="208" y="160" name="inst_05952A07" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="240" y="256" name="inst_8603BC86" locked="0" code="sprite_index = spr_fade01;&#xA;next_room = rm_island_stonepoint;&#xA;depth = -2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="interior" x="240" y="256" w="16" h="16" xo="176" yo="0" id="10004478" name="inst_2F39455A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -113,7 +114,6 @@
     <tile bgName="DungeonV10" x="240" y="144" w="16" h="16" xo="16" yo="224" id="10004529" name="inst_D8171BC1" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="256" y="144" w="16" h="16" xo="16" yo="224" id="10004530" name="inst_7D788688" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="DungeonV10" x="272" y="144" w="16" h="16" xo="16" yo="224" id="10004531" name="inst_D55B91F2" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="interior" x="240" y="256" w="16" h="16" xo="64" yo="112" id="10004532" name="inst_18E80720" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>-1</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

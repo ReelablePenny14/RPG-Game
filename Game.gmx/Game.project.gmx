@@ -317,6 +317,8 @@
     <sprite>sprites\spr_tree_apple</sprite>
     <sprite>sprites\spr_tree_aspen</sprite>
     <sprite>sprites\spr_tree_willow</sprite>
+    <sprite>sprites\spr_fade</sprite>
+    <sprite>sprites\spr_fade01</sprite>
     <sprite>sprites\spr_pillar01</sprite>
     <sprite>sprites\spr_pillar02</sprite>
     <sprite>sprites\spr_pillar03</sprite>
@@ -443,19 +445,19 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_island_stonepoint_cave</room>
     <room>rooms\rm_island_stonepoint</room>
-    <room>rooms\rm_tutorial_quest</room>
+    <room>rooms\rm_island_stonepoint_cave</room>
+    <room>rooms\rm_island_stonepoint_barn</room>
     <room>rooms\rm_tutorial1</room>
     <room>rooms\rm_tutorial2</room>
+    <room>rooms\rm_tutorial_quest</room>
+    <room>rooms\rm_incipien_shop</room>
     <room>rooms\rm_test1</room>
     <room>rooms\rm_level01</room>
     <room>rooms\rm_test</room>
     <room>rooms\rm_level_incipien</room>
     <room>rooms\rm_level04</room>
-    <room>rooms\rm_island_stonepoint_barn</room>
     <room>rooms\rm_town_incipien</room>
-    <room>rooms\rm_incipien_shop</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
