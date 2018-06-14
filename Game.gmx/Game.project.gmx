@@ -313,11 +313,13 @@
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_lillypad</sprite>
     <sprite>sprites\spr_tree_pine</sprite>
+    <sprite>sprites\spr_lodestone</sprite>
     <sprite>sprites\spr_tree_oak</sprite>
     <sprite>sprites\spr_tree_apple</sprite>
     <sprite>sprites\spr_tree_aspen</sprite>
     <sprite>sprites\spr_tree_willow</sprite>
     <sprite>sprites\spr_fade</sprite>
+    <sprite>sprites\spr_snow</sprite>
     <sprite>sprites\spr_fade01</sprite>
     <sprite>sprites\spr_pillar01</sprite>
     <sprite>sprites\spr_pillar02</sprite>
@@ -415,10 +417,12 @@
     <object>objects\obj_tree_mountain</object>
     <object>objects\obj_tree_stump</object>
     <object>objects\obj_pillar</object>
+    <object>objects\obj_snowControl</object>
     <object>objects\obj_ladder</object>
     <object>objects\obj_item_stats</object>
     <object>objects\obj_weapon</object>
     <object>objects\obj_item</object>
+    <object>objects\obj_lodestone</object>
     <object>objects\obj_lever</object>
     <object>objects\obj_key</object>
     <object>objects\obj_lighting</object>
@@ -446,7 +450,7 @@
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
     <room>rooms\rm_island_stonepoint</room>
-    <room>rooms\rm_island_stonepoint_cave</room>
+    <room>rooms\rm_island_stonepoint_house</room>
     <room>rooms\rm_island_stonepoint_barn</room>
     <room>rooms\rm_tutorial1</room>
     <room>rooms\rm_tutorial2</room>
