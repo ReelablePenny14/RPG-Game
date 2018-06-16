@@ -297,6 +297,19 @@
       <sprites name="NPC_Farmer">
         <sprite>sprites\spr_npc_farmer</sprite>
       </sprites>
+      <sprites name="NPC_Smith">
+        <sprite>sprites\spr_npc_smith</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="Trees">
+      <sprite>sprites\spr_tree_stump01</sprite>
+      <sprite>sprites\spr_tree_stump02</sprite>
+      <sprite>sprites\spr_tree_stump03</sprite>
+      <sprite>sprites\spr_tree_oak</sprite>
+      <sprite>sprites\spr_tree_apple</sprite>
+      <sprite>sprites\spr_tree_willow</sprite>
+      <sprite>sprites\spr_tree_aspen</sprite>
+      <sprite>sprites\spr_tree_pine</sprite>
     </sprites>
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_gate_open</sprite>
@@ -312,21 +325,12 @@
     <sprite>sprites\spr_key</sprite>
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_lillypad</sprite>
-    <sprite>sprites\spr_tree_pine</sprite>
     <sprite>sprites\spr_lodestone</sprite>
-    <sprite>sprites\spr_tree_oak</sprite>
-    <sprite>sprites\spr_tree_apple</sprite>
-    <sprite>sprites\spr_tree_aspen</sprite>
-    <sprite>sprites\spr_tree_willow</sprite>
     <sprite>sprites\spr_fade</sprite>
-    <sprite>sprites\spr_snow</sprite>
     <sprite>sprites\spr_fade01</sprite>
     <sprite>sprites\spr_pillar01</sprite>
     <sprite>sprites\spr_pillar02</sprite>
     <sprite>sprites\spr_pillar03</sprite>
-    <sprite>sprites\spr_tree_stump01</sprite>
-    <sprite>sprites\spr_tree_stump02</sprite>
-    <sprite>sprites\spr_tree_stump03</sprite>
     <sprite>sprites\spr_lever</sprite>
     <sprite>sprites\spr_torch</sprite>
     <sprite>sprites\spr_hit_indicator</sprite>
@@ -336,6 +340,7 @@
     <sprite>sprites\spr_pause_ui_quest</sprite>
     <sprite>sprites\spr_pause_ui_map</sprite>
     <sprite>sprites\spr_tab_selected</sprite>
+    <sprite>sprites\spr_ironBar</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_map</sprite>
     <sprite>sprites\spr_grass</sprite>
@@ -347,6 +352,8 @@
     <sprite>sprites\spr_notification_bottom</sprite>
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_objective_area</sprite>
+    <sprite>sprites\spr_anvil</sprite>
+    <sprite>sprites\spr_furnace</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="tile_set">
@@ -415,9 +422,12 @@
     <object>objects\obj_lillypad</object>
     <object>objects\obj_tree_oak</object>
     <object>objects\obj_tree_mountain</object>
+    <object>objects\obj_part_smoke</object>
+    <object>objects\obj_part_snow</object>
+    <object>objects\obj_anvil</object>
+    <object>objects\obj_furnace</object>
     <object>objects\obj_tree_stump</object>
     <object>objects\obj_pillar</object>
-    <object>objects\obj_snowControl</object>
     <object>objects\obj_ladder</object>
     <object>objects\obj_item_stats</object>
     <object>objects\obj_weapon</object>
@@ -436,6 +446,7 @@
     <object>objects\obj_castle</object>
     <object>objects\obj_house01</object>
     <object>objects\obj_house02</object>
+    <object>objects\obj_ironBar</object>
     <object>objects\obj_tutorial</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_axe</object>
@@ -445,6 +456,7 @@
     <object>objects\obj_rapier</object>
     <object>objects\obj_talking_npc</object>
     <object>objects\obj_farmer</object>
+    <object>objects\obj_smith</object>
     <object>objects\obj_objective_area</object>
   </objects>
   <rooms name="rooms">

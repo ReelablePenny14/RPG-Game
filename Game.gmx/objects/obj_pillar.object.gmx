@@ -3,7 +3,7 @@
   <spriteName>spr_pillar01</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-8</depth>
+  <depth>-7</depth>
   <persistent>0</persistent>
   <parentName>obj_wall</parentName>
   <maskName>&lt;undefined&gt;</maskName>
