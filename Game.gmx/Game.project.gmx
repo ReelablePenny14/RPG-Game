@@ -353,7 +353,8 @@
     <sprite>sprites\spr_cursor</sprite>
     <sprite>sprites\spr_objective_area</sprite>
     <sprite>sprites\spr_anvil</sprite>
-    <sprite>sprites\spr_furnace</sprite>
+    <sprite>sprites\spr_furnace_live</sprite>
+    <sprite>sprites\spr_furnace_dead</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="tile_set">

@@ -29,7 +29,7 @@
 player_wants_to_talk = false;
 quest_id = -1;
 player_dialog = noone;
-obj_player.can_fight = false; //so you cant kill the ducks
+obj_player.can_fight = true; //so you cant kill the ducks
 
 dialog_num = noone;
 dialog_num[0] = 0;
@@ -38,24 +38,24 @@ dialog_num[1] = 0;
 dialog = noone;
 //when you first talk to the Smith
 dialog[0, 0] = "Welcome Adventurer!";
-dialog[0, 1] = "Would you mind helping me?";
-dialog[0, 2] = "...Oh hello there young fellow";
-dialog[0, 3] = "Can you help me with something?";
-//then the player says yes
+dialog[0, 1] = "What could I do for you?";
+// Then the player ask if he could make a sword
+// the Smith accepts the request, but needs certain resources
 dialog[1, 0] = "Your help will be appreciated and rewarded.";
 dialog[1, 1] = "Right now I am out of resources.";
-dialog[1, 2] = "Could you bring me 6 Iron Bars?";
+dialog[1, 2] = "Could you bring me 2 Iron Ores?";
 dialog[1, 3] = "Good luck and be careful of the slimes.";
-// The player accepts the mission of searching for 6 Iron Bars.
+// The player accepts the mission of searching for 2 Iron Ores.
 //after this dialog add this quest to quest list
 
 //when ever you talk with the Smith again when quest in progress
-dialog[2, 0] = "Continue searching for Iron Bars until you have 6.";
+dialog[2, 0] = "Continue searching for Iron Ores until you have 2.";
 
 //when you finished the quest
 dialog[3, 0] = "Thank you for your help.";
 dialog[3, 1] = "Here is your reward.";
 //animation or something showing player got something from the Smith
+// Reward: 20 exp and a Basic Sword
 //also show the quest in pause menu tab is complete
 dialog[4, 0] = "Use that sword to fend off stronger monsters.";
 
@@ -132,8 +132,8 @@ if(obj_input.continue_key){
         quest_id = array_height_2d(obj_player_stats.quest_log);
         obj_player_stats.quest_log[quest_id, 0] = false;
         // The player needs 6 Iron Bars to give to the Farmer.
-        obj_player_stats.quest_log[quest_id, 1] = "Collect 6 Iron Bars";
-        obj_player_stats.quest_log[quest_id, 2] = "Find all 6 Iron Bars and bring them back to the Smith";
+        obj_player_stats.quest_log[quest_id, 1] = "Collect 2 Iron Ores";
+        obj_player_stats.quest_log[quest_id, 2] = "Find all 2 Iron Ores and bring them back to the Smith";
         obj_player_stats.current_quest = quest_id;
         talking = false;
         obj_control.game_state = PLAY;
