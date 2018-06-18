@@ -29,6 +29,9 @@
 darken = 0;
 darken_step = 0;
 next_room = room_next(room);
+new_player_x = -1;
+new_player_y = -1;
+new_player_sprite_direction = noone;
 </string>
           </argument>
         </arguments>
@@ -52,11 +55,14 @@ next_room = room_next(room);
           <argument>
             <kind>1</kind>
             <string>/// Go to next room
-if room_exists(room_next(room)){
+if room_exists(next_room){
     room_goto(next_room);
     obj_control.alarm[1] = room_speed;
     obj_control.darken = 1;   
     obj_control.darken_step = 1/room_speed;
+    obj_player_stats.next_room_player_x = new_player_x;
+    obj_player_stats.next_room_player_y = new_player_y;
+    obj_player_stats.next_room_player_sprite_direction = new_player_sprite_direction;
 }
 </string>
           </argument>
@@ -144,44 +150,45 @@ if(alarm[0]&gt;0){
           <argument>
             <kind>1</kind>
             <string>draw_self()
-var dnumx = x+6;
-var dnumy = y+5;
-switch(keys_required){
-    case 0:
-        draw_sprite(spr_door_zero, 0, dnumx, dnumy)
-        break;
-    case 1:
-        draw_sprite(spr_door_one, 0, dnumx, dnumy)
-        break;
-    case 2:
-        draw_sprite(spr_door_two, 0, dnumx, dnumy)
-        break;
-    case 3:
-        draw_sprite(spr_door_three, 0, dnumx, dnumy)
-        break;
-    case 4:
-        draw_sprite(spr_door_four, 0, dnumx, dnumy)
-        break;
-    case 5:
-        draw_sprite(spr_door_five, 0, dnumx, dnumy)
-        break;
-    case 6:
-        draw_sprite(spr_door_six, 0, dnumx, dnumy)
-        break;
-    case 7:
-        draw_sprite(spr_door_seven, 0, dnumx, dnumy)
-        break;
-    case 8:
-        draw_sprite(spr_door_eight, 0, dnumx, dnumy)
-        break;
-    case 9:
-        draw_sprite(spr_door_nine, 0, dnumx, dnumy)
-        break;
+if(sprite_index != spr_fade and sprite_index != spr_fade01){
+    var dnumx = x+6;
+    var dnumy = y+5;
+    switch(keys_required){
+        case 0:
+            draw_sprite(spr_door_zero, 0, dnumx, dnumy)
+            break;
+        case 1:
+            draw_sprite(spr_door_one, 0, dnumx, dnumy)
+            break;
+        case 2:
+            draw_sprite(spr_door_two, 0, dnumx, dnumy)
+            break;
+        case 3:
+            draw_sprite(spr_door_three, 0, dnumx, dnumy)
+            break;
+        case 4:
+            draw_sprite(spr_door_four, 0, dnumx, dnumy)
+            break;
+        case 5:
+            draw_sprite(spr_door_five, 0, dnumx, dnumy)
+            break;
+        case 6:
+            draw_sprite(spr_door_six, 0, dnumx, dnumy)
+            break;
+        case 7:
+            draw_sprite(spr_door_seven, 0, dnumx, dnumy)
+            break;
+        case 8:
+            draw_sprite(spr_door_eight, 0, dnumx, dnumy)
+            break;
+        case 9:
+            draw_sprite(spr_door_nine, 0, dnumx, dnumy)
+            break;
+        
     
-
-
+    
+    }
 }
-
 </string>
           </argument>
         </arguments>

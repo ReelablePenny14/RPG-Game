@@ -38,6 +38,9 @@ starting_expr = expr;
 starting_level = level;
 starting_keys = keys;
 starting_inventory = noone;
+next_room_player_x = -1;
+next_room_player_y = -1;
+next_room_player_sprite_direction = noone;
 //frames till next move
 spd = 9;
 //frames till next attack
@@ -51,6 +54,8 @@ inventory[2] = obj_item_stats.emptyi;
 inventory[3] = obj_item_stats.emptyi;
 inventory[4] = obj_item_stats.emptyi;
 starting_inventory = inventory;
+starting_inventory[0] = inventory[0];
+show_debug_message(starting_inventory);
 
 //for world select
 var player = 1;
@@ -132,6 +137,8 @@ if(hp &lt;= 0){
     level = starting_level;
     keys = starting_keys;
     inventory = starting_inventory;
+    inventory[0] = starting_inventory[0];
+    show_debug_message(starting_inventory);
     room_restart();
 }
 </string>
@@ -161,6 +168,24 @@ starting_expr = expr;
 starting_level = level;
 starting_keys = keys;
 starting_inventory = inventory;
+starting_inventory[0] = inventory[0];
+
+
+if(next_room_player_x != -1 and next_room_player_y != -1){
+    if(instance_exists(obj_player)){
+        obj_player.phy_position_x = next_room_player_x;
+        obj_player.phy_position_y = next_room_player_y;
+        obj_player_show.phy_position_x = next_room_player_x;
+        obj_player_show.phy_position_y = next_room_player_y;
+        if (instance_exists(obj_view)){
+            obj_view.x = obj_player_show.phy_position_x;
+            obj_view.y = obj_player_show.phy_position_y;
+        }
+    }
+}
+if(next_room_player_sprite_direction != noone){
+    obj_player_show.sprite_index = next_room_player_sprite_direction;
+}
 </string>
           </argument>
         </arguments>

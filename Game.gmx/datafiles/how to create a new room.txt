@@ -10,7 +10,5 @@
 -obj_player (dont place the obj_player_show)
 (dont place the obj_input)
 
-v0.28
--finished tutorial quest
--cant pick up items while fighting
--fixed player attack animation bug
+doors into houses and back save last player position
+fixed inventory reseting on death bug

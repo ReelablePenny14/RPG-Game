@@ -34,6 +34,8 @@ finish = noone;
 target = -2;
 xmove = 0;
 ymove = 0;
+view_hborder[0] = 448/2;
+view_vborder[0] = 208/2;
 hborder = view_hborder[0];
 vborder = view_vborder[0];
 
