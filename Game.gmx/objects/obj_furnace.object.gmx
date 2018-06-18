@@ -3,7 +3,7 @@
   <spriteName>spr_furnace_live</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-7</depth>
+  <depth>-9</depth>
   <persistent>0</persistent>
   <parentName>obj_wall</parentName>
   <maskName>&lt;undefined&gt;</maskName>

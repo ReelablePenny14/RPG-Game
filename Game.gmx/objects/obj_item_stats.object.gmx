@@ -148,6 +148,14 @@ item[iindex].exp_boost = 1;
 item[iindex].type = 3;
 iindex++;
 
+// Iron Ore
+item[iindex] = instance_create(0, 0, obj_item)
+item[iindex].name = "Iron Ore";
+item[iindex].sprite_index = spr_iron_ore;
+item[iindex].display_sprite = spr_iron_ore;
+item[iindex].iron_ore += 1;
+iindex++;
+
 
 
 

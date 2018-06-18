@@ -29,7 +29,7 @@
 player_wants_to_talk = false;
 quest_id = -1;
 player_dialog = noone;
-obj_player.can_fight = true; //so you cant kill the ducks
+obj_player.can_fight = true;
 
 dialog_num = noone;
 dialog_num[0] = 0;
@@ -39,8 +39,13 @@ dialog = noone;
 //when you first talk to the Smith
 dialog[0, 0] = "Welcome Adventurer!";
 dialog[0, 1] = "What could I do for you?";
-// Then the player ask if he could make a sword
-// the Smith accepts the request, but needs certain resources
+// multi choice: 1. offer help 2. ask if he can make a weapon 3. say goodbye
+
+// Choice 1. response "I'm not sure you're qualified":
+
+// ask same questions without Choice 1.
+
+// Choice 2. Smith accepts to make sword, but needs certain resources
 dialog[1, 0] = "Your help will be appreciated and rewarded.";
 dialog[1, 1] = "Right now I am out of resources.";
 dialog[1, 2] = "Could you bring me 2 Iron Ores?";
@@ -66,9 +71,12 @@ dialog[5, 1] = "Make sure to wear eye protection when necessary.";
 //option 2
 dialog[6, 0] = "I find my work very pleasurable.";
 //option 3
-dialog[7, 0] = "I wonder how much more money I can make raising chickens...";
-
+dialog[7, 0] = "*clap* *clap* MEME REVIEW!";
+//option 4
 dialog[8, 0] = "Added me on instagram: @_3raan_";
+//option 5
+dialog[9, 0] = "Only $399.";
+
 
 
 

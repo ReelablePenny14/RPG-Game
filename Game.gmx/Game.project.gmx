@@ -322,6 +322,7 @@
     <sprite>sprites\spr_moveable_wall</sprite>
     <sprite>sprites\spr_profile</sprite>
     <sprite>sprites\spr_weapon_stats</sprite>
+    <sprite>sprites\spr_loading</sprite>
     <sprite>sprites\spr_key</sprite>
     <sprite>sprites\spr_ladder</sprite>
     <sprite>sprites\spr_lillypad</sprite>
@@ -340,10 +341,11 @@
     <sprite>sprites\spr_pause_ui_quest</sprite>
     <sprite>sprites\spr_pause_ui_map</sprite>
     <sprite>sprites\spr_tab_selected</sprite>
-    <sprite>sprites\spr_ironBar</sprite>
+    <sprite>sprites\spr_iron_ore</sprite>
     <sprite>sprites\spr_arrow</sprite>
     <sprite>sprites\spr_map</sprite>
-    <sprite>sprites\spr_grass</sprite>
+    <sprite>sprites\spr_grass01</sprite>
+    <sprite>sprites\spr_grass02</sprite>
     <sprite>sprites\spr_map_town01</sprite>
     <sprite>sprites\spr_map_stonepoint</sprite>
     <sprite>sprites\spr_map_tutorial</sprite>
@@ -439,6 +441,7 @@
     <object>objects\obj_lighting</object>
     <object>objects\obj_torch</object>
     <object>objects\obj_shield_artifact</object>
+    <object>objects\obj_ironOre</object>
     <object>objects\obj_hit_indicator</object>
     <object>objects\obj_floor_item_parent</object>
     <object>objects\obj_attack_artifact</object>
@@ -447,7 +450,6 @@
     <object>objects\obj_castle</object>
     <object>objects\obj_house01</object>
     <object>objects\obj_house02</object>
-    <object>objects\obj_ironBar</object>
     <object>objects\obj_tutorial</object>
     <object>objects\obj_sword</object>
     <object>objects\obj_axe</object>
@@ -462,12 +464,13 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
-    <room>rooms\rm_island_stonepoint</room>
-    <room>rooms\rm_island_stonepoint_house</room>
-    <room>rooms\rm_island_stonepoint_barn</room>
     <room>rooms\rm_tutorial1</room>
     <room>rooms\rm_tutorial2</room>
     <room>rooms\rm_tutorial_quest</room>
+    <room>rooms\rm_tutorial_quest_barn</room>
+    <room>rooms\rm_island_stonepoint</room>
+    <room>rooms\rm_island_stonepoint_house</room>
+    <room>rooms\rm_island_stonepoint_barn</room>
     <room>rooms\rm_incipien_shop</room>
     <room>rooms\rm_test1</room>
     <room>rooms\rm_level01</room>

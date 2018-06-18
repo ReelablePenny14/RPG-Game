@@ -33,6 +33,7 @@ type = 0;
 attack_boost = 0;
 crit_chance_boost = 0;
 crit_boost = 0;
+iron_ore = 0;
 </string>
           </argument>
         </arguments>

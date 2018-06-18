@@ -3,7 +3,7 @@
   <spriteName>spr_tab_selected</spriteName>
   <solid>0</solid>
   <visible>0</visible>
-  <depth>-8</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -29,7 +29,7 @@
 
 // Particle System
 part1_sys = part_system_create();
-part_system_depth(part1_sys, -8);
+part_system_depth(part1_sys, -9);
 
 // Particle
 part1 = part_type_create();
